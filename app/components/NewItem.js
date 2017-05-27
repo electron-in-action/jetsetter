@@ -21,7 +21,7 @@ class NewItem extends Component {
     const { value } = this.state;
 
     event.preventDefault();
-    onSubmit({ value, id: Date.now() });
+    onSubmit({ value, packed: false, id: Date.now() });
     this.setState({ value: '' });
   }
 
