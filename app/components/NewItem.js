@@ -30,8 +30,8 @@ class NewItem extends Component {
 
     return (
       <form className="NewItem" onSubmit={this.handleSubmit}>
-        <input type="text" value={value} onChange={this.handleChange} />
-        <input type="submit" />
+        <input className="NewItem-input" type="text" value={value} onChange={this.handleChange} />
+        <input className="NewItem-submit button" type="submit" />
       </form>
     );
   }
