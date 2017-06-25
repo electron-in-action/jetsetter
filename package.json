@@ -13,13 +13,15 @@
   "author": "Steve Kinney",
   "license": "MIT",
   "dependencies": {
+    "electron-compile": "^6.4.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "babel-preset-electron": "^1.4.15",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "electron-prebuilt-compile": "^1.6.11",
     "eslint": "^3.19.0",
