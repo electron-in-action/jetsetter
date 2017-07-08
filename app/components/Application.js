@@ -38,7 +38,7 @@ class Application extends Component {
       <div className="Application">
         <NewItem onSubmit={this.addItem} />
         <Items
-          title="Unpacked Things"
+          title="Unpacked Items"
           items={unpackedItems}
           onCheckOff={this.markAsPacked}
         />
