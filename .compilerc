@@ -17,6 +17,7 @@
           "react-hot-loader/babel",
           "syntax-dynamic-import",
           "dynamic-import-node",
+          "transform-es2015-classes",
           "transform-async-to-generator",
           "transform-es2015-modules-commonjs",
           "transform-object-rest-spread"
@@ -43,6 +44,7 @@
         "plugins": [
           "syntax-dynamic-import",
           "dynamic-import-node",
+          "transform-es2015-classes",
           "transform-async-to-generator",
           "transform-es2015-modules-commonjs",
           "transform-object-rest-spread"
