@@ -19,6 +19,9 @@
           "transform-object-rest-spread"
         ],
         "sourceMaps": "inline"
+      },
+      "text/jade": {
+        "pretty": true
       }
     },
     "production": {
