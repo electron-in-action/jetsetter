@@ -29,6 +29,16 @@ button, .button, input[type="submit"] {
     width: 100%;
     margin: 1em 0;
   }
+  &.secondary {
+    background-color: lighten($accent-color, 40);
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+  &.delete {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 0 0.5em;
+  }
 }
 
 .NewItem {
