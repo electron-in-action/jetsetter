@@ -22,52 +22,45 @@ class Application extends Component {
 
   fetchItems() {
     this.props
-      .database('items')
-      .select()
+      .database
+      .getAll()
       .then(items => this.setState({ items }))
       .catch(console.error);
   }
 
   addItem(item) {
-    this.props.database('items').insert(item).then(this.fetchItems);
+    this.props.database.add(item).then(this.fetchItems);
   }
 
   deleteItem(item) {
     this.props
-      .database('items')
-      .where('id', item.id)
-      .delete()
+      .database
+      .delete(item)
       .then(this.fetchItems)
       .catch(console.error);
   }
 
   markAsPacked(item) {
+    const updatedItem = { ...item, packed: !item.packed };
     this.props
-      .database('items')
-      .where('id', '=', item.id)
-      .update({
-        packed: !item.packed
-      })
+      .database
+      .update(updatedItem)
       .then(this.fetchItems)
       .catch(console.error);
   }
 
   markAllAsUnpacked() {
     this.props
-      .database('items')
-      .select()
-      .update({
-        packed: false
-      })
+      .database
+      .markAllAsUnpacked()
       .then(this.fetchItems)
       .catch(console.error);
   }
 
   deleteUnpackedItems() {
     this.props
-      .database('items')
-      .where('packed', false)
-      .delete()
+      .database
+      .deleteUnpackedItems()
       .then(this.fetchItems)
       .catch(console.error);
   }
