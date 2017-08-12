@@ -24,7 +24,8 @@ class Application extends Component {
     this.props
       .database('items')
       .select()
-      .then(items => this.setState({ items }));
+      .then(items => this.setState({ items }))
+      .catch(console.error);
   }
 
   addItem(item) {
@@ -36,7 +37,8 @@ class Application extends Component {
       .database('items')
       .where('id', item.id)
       .delete()
-      .then(this.fetchItems);
+      .then(this.fetchItems)
+      .catch(console.error);
   }
 
   markAsPacked(item) {

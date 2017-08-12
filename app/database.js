@@ -1,9 +1,14 @@
+import path from 'path';
+import { remote } from 'electron';
+import knex from 'knex';
 import 'sqlite3';
 
-const database = require('knex')({
+const { app } = remote;
+
+const database = knex({
   client: 'sqlite3',
   connection: {
-    filename: './db.sqlite'
+    filename: path.join(app.getPath('userData'), 'jetsetter-items.sqlite')
   },
   useNullAsDefault: true
 });
