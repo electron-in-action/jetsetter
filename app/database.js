@@ -1,6 +1,6 @@
 import idb from 'idb';
 
-const database = idb.open('items-store', 2, upgradeDb => {
+const database = idb.open('items-database', 3, upgradeDb => {
   upgradeDb.createObjectStore('items', { keyPath: 'id', autoIncrement: true });
 });
 
