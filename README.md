@@ -1,6 +1,9 @@
 # Jetsetter
 
-## To do
+A simple Electron application for keeping track of what you have—and have not—packed.
 
-- [] Disable the submit button when there is no valid text
-- [] Add the ability to remove an item
+## Example Branches
+
+- [Completed Example from Chapter 11](https://github.com/electron-in-action/jetsetter/tree/completed-example)
+- [Example with SQLite from Chapter 12](https://github.com/electron-in-action/jetsetter/tree/sqlite)
+- [Example with IndexedDB from Chapter 12](https://github.com/electron-in-action/jetsetter/tree/indexeddb)
