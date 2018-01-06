@@ -29,7 +29,10 @@ class Application extends Component {
   }
 
   addItem(item) {
-    this.props.database('items').insert(item).then(this.fetchItems);
+    this.props
+      .database('items')
+      .insert(item)
+      .then(this.fetchItems);
   }
 
   deleteItem(item) {
@@ -95,7 +98,10 @@ class Application extends Component {
         <button className="button full-width" onClick={this.markAllAsUnpacked}>
           Mark All As Unpacked
         </button>
-        <button className="button full-width secondary" onClick={this.deleteUnpackedItems}>
+        <button
+          className="button full-width secondary"
+          onClick={this.deleteUnpackedItems}
+        >
           Remove Unpacked Items
         </button>
       </div>
