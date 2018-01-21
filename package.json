@@ -4,8 +4,10 @@
   "description": "An application for keeping track of the things you need to pack.",
   "main": "app/main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "keywords": [
     "electron"
@@ -13,12 +15,14 @@
   "author": "Steve Kinney",
   "license": "MIT",
   "dependencies": {
-    "electron-compile": "6.4.2",
+    "electron-compile": "^6.4.2",
+    "electron-squirrel-startup": "^1.0.0",
     "idb": "2.0.4",
     "knex": "0.14.2",
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-hot-loader": "next",
     "sqlite3": "3.1.13"
   },
   "devDependencies": {
@@ -26,16 +30,48 @@
     "babel-plugin-dynamic-import-node": "1.2.0",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
     "babel-plugin-system-import-transformer": "3.1.0",
-    "babel-plugin-transform-async-to-generator": "6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-plugin-transform-es2015-classes": "6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-env": "1.6.1",
-    "babel-preset-react": "6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^4.2.0",
     "electron-prebuilt-compile": "1.8.2-beta.3",
     "electron-rebuild": "1.7.3",
     "eslint": "4.16.0",
-    "eslint-plugin-import": "2.8.0",
-    "react-hot-loader": "next"
+    "eslint-plugin-import": "2.8.0"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "jetsetter"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "jetsetter"
+      }
+    }
   }
 }
