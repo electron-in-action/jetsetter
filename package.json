@@ -19,6 +19,7 @@
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-hot-loader": "next",
     "sqlite3": "3.1.13"
   },
   "devDependencies": {
@@ -35,7 +36,6 @@
     "electron-prebuilt-compile": "1.8.2-beta.3",
     "electron-rebuild": "1.7.3",
     "eslint": "4.16.0",
-    "eslint-plugin-import": "2.8.0",
-    "react-hot-loader": "next"
+    "eslint-plugin-import": "2.8.0"
   }
 }
