@@ -13,7 +13,7 @@
   "author": "Steve Kinney",
   "license": "MIT",
   "dependencies": {
-    "electron-compile": "^6.4.2",
+    "electron-compile": "6.4.2",
     "idb": "^2.0.4",
     "knex": "^0.14.2",
     "prop-types": "^15.6.0",
