@@ -1,6 +1,7 @@
 {
   "name": "jetsetter",
   "version": "1.0.0",
+  "productName": "Jetsetter",
   "description": "An application for keeping track of the things you need to pack.",
   "main": "app/main.js",
   "scripts": {
