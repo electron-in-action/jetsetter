@@ -36,7 +36,9 @@
     "electron-prebuilt-compile": "1.8.2-beta.3",
     "electron-rebuild": "^1.7.3",
     "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "react-hot-loader": "next"
+    "eslint-plugin-react": "^7.6.1",
+    "react-hot-loader": "^3.1.3"
   }
 }
