@@ -15,12 +15,10 @@
   "dependencies": {
     "electron-compile": "6.4.2",
     "idb": "2.0.4",
-    "knex": "0.14.2",
     "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-hot-loader": "next",
-    "sqlite3": "3.1.13"
+    "react-hot-loader": "next"
   },
   "devDependencies": {
     "babel-eslint": "8.2.1",
