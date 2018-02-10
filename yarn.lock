@@ -2615,11 +2615,6 @@ iconv-lite@~0.4.13:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
-<<<<<<< HEAD
-ignore@^3.2.0:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.3.tgz#432352e57accd87ab3110e82d3fea0e47812156d"
-=======
 idb@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/idb/-/idb-2.0.4.tgz#cf6d4a9ab077a207ca6e62564d1552401f5cd458"
@@ -2627,7 +2622,6 @@ idb@^2.0.4:
 ignore@^3.3.3:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
->>>>>>> 1b180bf... Update dependencies
 
 image-size@~0.5.0:
   version "0.5.5"
