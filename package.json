@@ -5,6 +5,7 @@
   "main": "app/main.js",
   "scripts": {
     "start": "electron .",
+    "postinstall": "electron-rebuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,9 +14,10 @@
   "author": "Steve Kinney",
   "license": "MIT",
   "dependencies": {
-    "electron-compile": "^6.4.2",
+    "electron": "1.7.11",
+    "electron-prebuilt-compile": "1.7.11",
     "idb": "^2.0.4",
-    "knex": "^0.14.2",
+    "knex": "^0.14.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -33,12 +35,12 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "electron-prebuilt-compile": "1.8.2-beta.3",
     "electron-rebuild": "^1.7.3",
-    "eslint": "^4.16.0",
+    "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-react": "^7.6.1",
+    "node-abi": "2.2.0",
     "react-hot-loader": "^3.1.3"
   }
 }
